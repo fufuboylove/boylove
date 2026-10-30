@@ -1,48 +1,69 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>香香腐宅 防走失頁｜最新可用網址・永久網域 boylove.cc</title>
-<meta name="description" content="香香腐宅 官方防走失頁：永久網域 boylove.cc，以及中國大陸免翻牆即可訪問的最新線路。請收藏本頁，網址失效時回來查看最新可用網域。">
-<meta name="keywords" content="香香腐宅, boylove.cc, 防走失, 最新網址, 備用網域, 線路">
+<title>香香腐宅 防走失页｜最新可用网址・永久网域 boylove.cc</title>
+<meta name="description" content="香香腐宅 官方防走失页：永久网域 boylove.cc，以及中国大陆免翻墙即可访问的最新线路。请收藏本页，网址失效时回来查看最新可用网域。">
+<meta name="keywords" content="香香腐宅, boylove.cc, 防走失, 最新网址, 备用网域, 线路">
 <meta name="theme-color" content="#f7d9ec" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1d1626" media="(prefers-color-scheme: dark)">
-<meta property="og:title" content="香香腐宅 防走失頁">
-<meta property="og:description" content="永久網域 boylove.cc 與最新免翻牆線路，請收藏本頁。">
+<meta property="og:title" content="香香腐宅 防走失页">
+<meta property="og:description" content="永久网域 boylove.cc 与最新免翻墙线路，请收藏本页。">
 <meta property="og:type" content="website">
 <meta name="format-detection" content="telephone=no">
 <style>
 :root{
-  --bg1:#fdf2f8; --bg2:#f3e8ff; --card:#ffffffcc; --card-solid:#fff;
+  --bg1:#fdf2f8; --bg2:#f3e8ff; --card:rgba(255,255,255,.80); --card-solid:#fff;
   --text:#3b2a44; --muted:#8a7491; --border:#f0d6ea;
   --pink:#ec4899; --purple:#a855f7; --grad:linear-gradient(135deg,#f472b6 0%,#c084fc 100%);
   --ok:#16a34a; --ok-bg:#dcfce7; --bad:#dc2626; --bad-bg:#fee2e2; --wait:#a16207; --wait-bg:#fef3c7;
-  --shadow:0 8px 28px rgba(190,90,170,.14);
+  --shadow:0 8px 28px rgba(190,90,170,.18);
+  --glass:rgba(255,255,255,.62);
   --radius:18px;
 }
 @media (prefers-color-scheme: dark){
   :root{
-    --bg1:#1a1422; --bg2:#231a33; --card:#2a2038cc; --card-solid:#2a2038;
+    --bg1:#1a1422; --bg2:#231a33; --card:rgba(36,27,50,.82); --card-solid:#2a2038;
     --text:#f3e8ff; --muted:#b9a5c7; --border:#3d2f52;
     --ok:#4ade80; --ok-bg:#14532d66; --bad:#f87171; --bad-bg:#7f1d1d66; --wait:#fcd34d; --wait-bg:#78350f66;
     --shadow:0 8px 28px rgba(0,0,0,.35);
+    --glass:rgba(30,22,42,.62);
   }
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
 body{
-  min-height:100vh;color:var(--text);
-  font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei","Segoe UI",sans-serif;
-  background:radial-gradient(circle at 10% 0%,#fbcfe8aa 0,transparent 40%),radial-gradient(circle at 100% 30%,#ddd6feaa 0,transparent 40%),linear-gradient(180deg,var(--bg1),var(--bg2));
-  background-attachment:fixed;line-height:1.6;
+  min-height:100vh;color:var(--text);position:relative;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",sans-serif;
+  background:var(--bg1);line-height:1.6;
   padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
+/* 固定背景图：竖屏/窄屏用 bg-mobile.jpg，宽屏用 bg-desktop.jpg（相对路径，GitHub Pages 子目录可用） */
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:var(--bg1) url("bg-mobile.jpg") center bottom/cover no-repeat}
+@media (min-width:768px) and (min-aspect-ratio:1/1){
+  body::before{background-image:url("bg-desktop.jpg");background-position:65% center}
+}
+/* 柔和半透明遮罩，保证文字可读 */
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:linear-gradient(180deg,rgba(253,242,248,.55) 0%,rgba(253,242,248,.25) 45%,rgba(243,232,255,.10) 100%)}
+@media (min-width:768px) and (min-aspect-ratio:1/1){
+  body::after{background:linear-gradient(90deg,rgba(253,242,248,.55) 0%,rgba(253,242,248,.30) 45%,rgba(253,242,248,0) 75%)}
+}
 @media (prefers-color-scheme: dark){
-  body{background:radial-gradient(circle at 10% 0%,#831e5c55 0,transparent 40%),radial-gradient(circle at 100% 30%,#5b21b655 0,transparent 40%),linear-gradient(180deg,var(--bg1),var(--bg2));background-attachment:fixed}
+  body::after{background:linear-gradient(180deg,rgba(26,20,34,.72) 0%,rgba(26,20,34,.45) 50%,rgba(26,20,34,.30) 100%)}
+}
+@media (prefers-color-scheme: dark) and (min-width:768px) and (min-aspect-ratio:1/1){
+  body::after{background:linear-gradient(90deg,rgba(26,20,34,.75) 0%,rgba(26,20,34,.45) 50%,rgba(26,20,34,.20) 80%)}
 }
 .wrap{max-width:960px;margin:0 auto;padding:28px 16px 40px}
-header{text-align:center;margin-bottom:22px}
+header{text-align:center;margin:0 auto 22px;padding:14px 18px;border-radius:22px;background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--border);width:fit-content;max-width:100%}
+.section-title h2,.outside-note{background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:4px 12px;border-radius:12px}
+.outside-note{display:inline-block}
+.auto small{background:var(--glass);border-radius:10px;padding:2px 10px;align-self:center}
+footer span,footer{text-shadow:0 1px 2px var(--glass)}
+/* 宽屏：内容靠左，让右侧人物露出 */
+@media (min-width:1100px) and (min-aspect-ratio:1/1){ .wrap{margin-left:max(4vw,24px);max-width:640px} header{margin-left:0} }
 .brand{display:inline-flex;align-items:center;gap:10px;font-size:34px;font-weight:800;letter-spacing:.5px}
 .brand .heart{width:38px;height:38px;border-radius:12px;background:var(--grad);display:grid;place-items:center;color:#fff;font-size:20px;box-shadow:0 6px 16px rgba(236,72,153,.35)}
 .brand .name{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -51,7 +72,7 @@ header{text-align:center;margin-bottom:22px}
 .section-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:26px 2px 12px;flex-wrap:wrap}
 .section-title h2{font-size:18px;display:flex;align-items:center;gap:8px}
 .section-title h2::before{content:"";width:6px;height:18px;border-radius:3px;background:var(--grad)}
-.card{background:var(--card);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px}
+.card{background:var(--card);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px}
 .perm{display:flex;flex-direction:column;gap:12px;position:relative;overflow:hidden}
 .perm::after{content:"";position:absolute;right:-40px;top:-40px;width:140px;height:140px;border-radius:50%;background:var(--grad);opacity:.12}
 .badge{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;white-space:nowrap}
@@ -77,7 +98,7 @@ header{text-align:center;margin-bottom:22px}
 .btn:active{transform:scale(.97)}
 .btn-primary{background:var(--grad);color:#fff;flex:1;box-shadow:0 6px 16px rgba(192,132,252,.35)}
 .btn-primary:hover{filter:brightness(1.06)}
-.btn-ghost{background:transparent;color:var(--purple);border:1.5px solid #c084fc88}
+.btn-ghost{background:var(--glass);color:var(--purple);border:1.5px solid #c084fc88}
 .btn-ghost:hover{background:#c084fc1a}
 @media (prefers-color-scheme: dark){.btn-ghost{color:#d8b4fe}}
 .btn-sm{font-size:14px;padding:8px 14px;min-height:38px}
@@ -89,7 +110,7 @@ header{text-align:center;margin-bottom:22px}
 .tips ul{list-style:none;display:flex;flex-direction:column;gap:8px}
 .tips li{display:flex;gap:8px;font-size:15px}
 .tips li span:first-child{flex:none}
-.contact{display:none}  /* 聯絡方式區塊：預設隱藏，填入後把 display 改為 block 或移除此行 */
+.contact{display:none}  /* 联系方式区块：预设隐藏，填入后把 display 改为 block 或移除此行 */
 footer{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
 .toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);background:#3b2a44ee;color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;opacity:0;pointer-events:none;transition:.25s;z-index:10}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
@@ -99,84 +120,84 @@ footer{text-align:center;color:var(--muted);font-size:13px;margin-top:28px}
 <body>
 <div class="wrap">
   <header>
-    <div class="brand" aria-label="香香腐宅 防走失頁">
+    <div class="brand" aria-label="香香腐宅 防走失页">
       <span class="heart" aria-hidden="true">♥</span>
-      <span class="name">香香腐宅</span><span class="tag">防走失頁</span>
+      <span class="name">香香腐宅</span><span class="tag">防走失页</span>
     </div>
-    <p class="subtitle">網址失聯時，回來這裡找到最新線路</p>
+    <p class="subtitle">网址失联时，回来这里找到最新线路</p>
   </header>
 
-  <!-- 永久網域 -->
-  <div class="section-title"><h2>永久網域</h2></div>
+  <!-- 永久网域 -->
+  <div class="section-title"><h2>永久网域</h2></div>
   <section class="card perm" id="permanent"></section>
 
-  <!-- 大陸免翻牆線路 -->
+  <!-- 大陆免翻墙线路 -->
   <div class="section-title">
-    <h2>最新可用線路</h2>
-    <div class="toolbar"><button class="btn btn-ghost btn-sm" id="recheck" type="button">↻ 重新檢測</button></div>
+    <h2>最新可用线路</h2>
+    <div class="toolbar"><button class="btn btn-ghost btn-sm" id="recheck" type="button">↻ 重新检测</button></div>
   </div>
-  <p class="note" style="margin:-4px 2px 12px">以下網域在中國大陸<strong>免翻牆</strong>即可訪問，已依連線速度自動排序。</p>
+  <p class="note" style="margin:-4px 2px 12px"><span class="outside-note">以下网域在中国大陆<strong>免翻墙</strong>即可访问，已按连接速度自动排序。</span></p>
   <section class="grid" id="mirrors"></section>
 
   <div class="auto">
-    <button class="btn btn-primary" id="autoGo" type="button" disabled>⚡ 自動進入最快線路</button>
-    <small id="autoHint">正在檢測線路速度…</small>
+    <button class="btn btn-primary" id="autoGo" type="button" disabled>⚡ 自动进入最快线路</button>
+    <small id="autoHint">正在检测线路速度…</small>
   </div>
 
-  <!-- 溫馨提示 -->
-  <div class="section-title"><h2>溫馨提示</h2></div>
+  <!-- 温馨提示 -->
+  <div class="section-title"><h2>温馨提示</h2></div>
   <section class="card tips">
     <ul>
-      <li><span>📌</span><span>請<strong>收藏本頁</strong>，並記住永久網域 <strong>boylove.cc</strong>。</span></li>
-      <li><span>🔁</span><span>若網址無法開啟，請嘗試其他線路。</span></li>
-      <li><span>🌐</span><span>建議使用 Chrome、Safari 等瀏覽器訪問。</span></li>
+      <li><span>📌</span><span>请<strong>收藏本页</strong>，并记住永久网域 <strong>boylove.cc</strong>。</span></li>
+      <li><span>🔁</span><span>若网址无法开启，请尝试其他线路。</span></li>
+      <li><span>🌐</span><span>建议使用 Chrome、Safari 等浏览器访问。</span></li>
     </ul>
   </section>
 
   <!--
-    ===== 聯絡方式（預設隱藏）=====
-    需要時請：
-      1. 在下方 <ul> 中填入真實的聯絡連結（例如官方社群、客服信箱等）
-      2. 刪除此 <section> 上的 class="contact"，或把 CSS 中 .contact{display:none} 改為 display:block
+    ===== 联系方式（预设隐藏）=====
+    需要时请：
+      1. 在下方 <ul> 中填入真实的联系链接（例如官方社群、客服信箱等）
+      2. 删除此 <section> 上的 class="contact"，或把 CSS 中 .contact{display:none} 改为 display:block
   -->
   <section class="contact" id="contact">
-    <div class="section-title"><h2>聯絡我們</h2></div>
+    <div class="section-title"><h2>联系我们</h2></div>
     <div class="card tips">
       <ul>
-        <!-- <li><span>💬</span><a href="https://example.com" target="_blank" rel="noopener">官方頻道名稱</a></li> -->
+        <!-- <li><span>💬</span><a href="https://example.com" target="_blank" rel="noopener">官方频道名称</a></li> -->
       </ul>
     </div>
   </section>
 
-  <footer>© <span id="year"></span> 香香腐宅 ・ 防走失頁</footer>
+  <footer>© <span id="year"></span> 香香腐宅 ・ 防走失页</footer>
 </div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
 /* =========================================================
- *  網域設定（修改這裡即可）
- *  - PERMANENT：永久網域 { name: 顯示名稱, domain: 網域 }（需翻牆訪問；卡片只顯示 name）
- *  - MIRRORS：中國大陸免翻牆線路 { name: 顯示名稱, domain: 網域 }，可自由增刪
- *    （頁面會依實際檢測速度自動排序）
+ *  网域设定（修改这里即可）
+ *  - PERMANENT：永久网域 { name: 显示名称, domain: 网域 }（需翻墙访问；卡片只显示 name）
+ *  - MIRRORS：中国大陆免翻墙线路 { name: 显示名称, domain: 网域 }，可自由增删
+ *    （页面会依实际检测速度自动排序）
  * ========================================================= */
-const PERMANENT = { name: "香香腐宅永久網域", domain: "boylove.cc" };
+const PERMANENT = { name: "香香腐宅永久网域", domain: "boylove.cc" };
 const PERMANENT_DOMAIN = PERMANENT.domain;
 const MIRRORS = [
-  // name：卡片上顯示的名稱（不顯示網域）；domain：實際網域
-  { name: "線路1", domain: "fulovehouse.net" },
-  { name: "線路2", domain: "fufulove.net" },
-  { name: "線路3", domain: "fuzhaiboylove8.work" },
-  { name: "線路4", domain: "fuzhaiboylove7.work" },
-  // { name: "線路5", domain: "新網域.com" },   // ← 新增線路：照此格式加一行
+  // name：卡片上显示的名称（不显示网域）；domain：实际网域
+  { name: "线路1", domain: "fulovehouse.net" },
+  { name: "线路2", domain: "fufulove.net" },
+  { name: "线路3", domain: "fuzhaiboylove8.work" },
+  { name: "线路4", domain: "fuzhaiboylove7.work" },
+  // { name: "线路5", domain: "新网域.com" },   // ← 新增线路：照此格式加一行
 ];
 const MIRROR_DOMAINS = MIRRORS.map(m => m.domain);
 const labelOf = (d) => (MIRRORS.find(m => m.domain === d) || {}).name || d;
-const PROBE_PATH = "/favicon.ico"; // 用於測速的路徑
-const TIMEOUT_MS = 5000;           // 逾時（毫秒）
+const PROBE_PATH = "/favicon.ico"; // 用于测速的路径
+const TIMEOUT_MS = 5000;           // 逾时（毫秒）
 /* ========================================================= */
 
 const $ = (s) => document.querySelector(s);
-const results = {}; // domain -> ms | null(超時/失敗) | undefined(檢測中)
+const results = {}; // domain -> ms | null(超时/失败) | undefined(检测中)
 let round = 0;
 
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
@@ -194,7 +215,7 @@ async function copyText(text, label){
     try{document.execCommand("copy")}catch(_){}
     ta.remove();
   }
-  toast("已複製" + (label ? "「" + label + "」網址" : "：" + text));
+  toast("已复制" + (label ? "“" + label + "”网址" : "：" + text));
 }
 
 function cardHTML(domain, isPerm, label){
@@ -203,15 +224,15 @@ function cardHTML(domain, isPerm, label){
     <div class="row">
       <div class="domain line-name">${esc(label)}</div>
       <div class="meta">
-        ${isPerm ? '<span class="badge vpn">🔒 需翻牆</span>' : '<span class="badge cn">✓ 免翻牆</span>'}
+        ${isPerm ? '<span class="badge vpn">🔒 需翻墙</span>' : '<span class="badge cn">✓ 免翻墙</span>'}
         <span class="fast-tag" data-fast hidden>最快</span>
-        <span class="status wait" data-status>檢測中…</span>
+        <span class="status wait" data-status>检测中…</span>
       </div>
     </div>
-    ${isPerm ? '<p class="note">永久網域，需翻牆訪問。建議點擊「複製」保存網址。</p>' : ''}
+    ${isPerm ? '<p class="note">永久网域，需翻墙访问。建议点击“复制”保存网址。</p>' : ''}
     <div class="btns">
-      <a class="btn btn-primary" href="https://${d}" target="_blank" rel="noopener">進入</a>
-      <button class="btn btn-ghost" type="button" data-copy="${d}" data-label="${esc(label)}">複製</button>
+      <a class="btn btn-primary" href="https://${d}" target="_blank" rel="noopener">进入</a>
+      <button class="btn btn-ghost" type="button" data-copy="${d}" data-label="${esc(label)}">复制</button>
     </div>`;
 }
 
@@ -228,7 +249,7 @@ function render(){
   });
 }
 
-/* 測速：以 fetch(no-cors) 為主，Image() 為備援；任一成功即視為可用 */
+/* 测速：以 fetch(no-cors) 为主，Image() 为备援；任一成功即视为可用 */
 function probe(domain){
   const url="https://"+domain+PROBE_PATH+"?_t="+Date.now();
   const start=performance.now();
@@ -241,11 +262,11 @@ function probe(domain){
     if(window.fetch){
       fetch(url,{mode:"no-cors",cache:"no-store",signal:ctrl?ctrl.signal:undefined})
         .then(()=>{clear();finish(true)})
-        .catch(()=>{ /* 失敗時交給 Image 或逾時判定 */ });
+        .catch(()=>{ /* 失败时交给 Image 或逾时判定 */ });
     }
     const img=new Image();
     img.onload=()=>{clear();finish(true)};
-    // onerror 代表伺服器有回應（例如無 favicon），但 DNS 失敗也會觸發；交由 fetch 結果為主
+    // onerror 代表伺服器有回应（例如无 favicon），但 DNS 失败也会触发；交由 fetch 结果为主
     img.onerror=()=>{};
     img.src=url+"&img=1";
     setTimeout(()=>{ if(!done && ctrl) ctrl.abort(); },TIMEOUT_MS+50);
@@ -254,8 +275,8 @@ function probe(domain){
 
 function setStatus(el, ms){
   const s=el.querySelector("[data-status]");
-  if(ms===undefined){ s.className="status wait"; s.textContent="檢測中…"; }
-  else if(ms===null){ s.className="status bad"; s.textContent="超時"; }
+  if(ms===undefined){ s.className="status wait"; s.textContent="检测中…"; }
+  else if(ms===null){ s.className="status bad"; s.textContent="超时"; }
   else { s.className="status ok"; s.textContent="可用 "+ms+" ms"; }
 }
 
@@ -281,7 +302,7 @@ function updateRanking(){
 async function runChecks(){
   const my=++round;
   const btn=$("#recheck"), auto=$("#autoGo"), hint=$("#autoHint");
-  btn.disabled=true; auto.disabled=true; hint.textContent="正在檢測線路速度…";
+  btn.disabled=true; auto.disabled=true; hint.textContent="正在检测线路速度…";
   const all=[PERMANENT_DOMAIN,...MIRROR_DOMAINS];
   all.forEach(d=>{ results[d]=undefined; });
   document.querySelectorAll("[data-domain]").forEach(el=>setStatus(el,undefined));
@@ -296,8 +317,8 @@ async function runChecks(){
   if(my!==round) return;
   const fastest=updateRanking();
   btn.disabled=false;
-  if(fastest){ auto.disabled=false; auto.dataset.target=fastest; hint.textContent="最快線路："+labelOf(fastest)+"（"+results[fastest]+" ms）"; }
-  else { hint.textContent="暫時無法檢測到可用線路，請直接點擊上方「進入」嘗試，或稍後重新檢測。"; }
+  if(fastest){ auto.disabled=false; auto.dataset.target=fastest; hint.textContent="最快线路："+labelOf(fastest)+"（"+results[fastest]+" ms）"; }
+  else { hint.textContent="暂时无法检测到可用线路，请直接点击上方“进入”尝试，或稍后重新检测。"; }
 }
 
 $("#recheck").addEventListener("click",runChecks);

@@ -1,29 +1,29 @@
-# 香香腐宅 防走失頁
+# 香香腐宅 防走失页
 
-單一檔案 `index.html`（內嵌 CSS／JS，無外部資源），直接上傳即可使用。
+`index.html`（内嵌 CSS／JS，无外部 CDN）+ 两张背景图 `bg-mobile.jpg`、`bg-desktop.jpg`，三个文件放同一目录上传即可使用。
 
-## 修改網域
-打開 `index.html`，找到 `<script>` 最上方的設定區：
-- `PERMANENT`：永久網域，格式 `{ name: "香香腐宅永久網域", domain: "boylove.cc" }`；卡片只顯示 name
-- `MIRRORS`：大陸免翻牆線路，格式 `{ name: "線路1", domain: "網域" }`，一行一個；卡片只顯示 name，不顯示網域
-- 聯絡方式區塊預設隱藏，見 HTML 中「聯絡方式」註解說明
+## 修改网域
+打开 `index.html`，找到 `<script>` 最上方的设置区：
+- `PERMANENT`：永久网域，格式 `{ name: "香香腐宅永久网域", domain: "boylove.cc" }`；卡片只显示 name
+- `MIRRORS`：大陆免翻墙线路，格式 `{ name: "线路1", domain: "网域" }`，一行一个；卡片只显示 name，不显示网域
+- 联系方式区块默认隐藏，见 HTML 中“联系方式”注释说明
 
 ## 部署方式
-> 建議：防走失頁應放在**與主站不同的獨立網域**上，主站網域被封時才不會一起失效。
+> 建议：防走失页应放在**与主站不同的独立网域**上，主站网域被封时才不会一起失效。
 
-### 1. Cloudflare Pages / Workers（推薦）
-- 後台：Workers & Pages → 建立 → Pages → 「直接上傳」，拖入本資料夾即可。
-- 或用指令：`npx wrangler pages deploy . --project-name boylove-fanglost`
-- 部署後於「自訂網域」綁定一個獨立網域。
+### 1. Cloudflare Pages / Workers（推荐）
+- 后台：Workers & Pages → 创建 → Pages → “直接上传”，拖入本文件夹即可。
+- 或用命令：`npx wrangler pages deploy . --project-name boylove-fanglost`
+- 部署后于“自定义域”绑定一个独立网域。
 
 ### 2. GitHub Pages
-- 新建公開倉庫，上傳 `index.html`。
-- Settings → Pages → Source 選 `main` 分支根目錄，儲存。
-- 可在同頁設定自訂網域（Custom domain）。
+- 新建公开仓库，上传 `index.html` 及两张背景图。
+- Settings → Pages → Source 选 `main` 分支根目录，保存。
+- 可在同页设置自定义域名（Custom domain）。
 
-### 3. 任意靜態主機
-- 將 `index.html` 上傳到任何虛擬主機、物件儲存（如 S3、R2）或 Nginx 網站根目錄即可，無需後端。
+### 3. 任意静态主机
+- 将 `index.html` 及背景图上传到任何虚拟主机、对象存储（如 S3、R2）或 Nginx 网站根目录即可，无需后端。
 
 ## 注意
-- 測速是在訪客瀏覽器中請求各網域的 `/favicon.ico`，結果僅供參考；若某網域沒有 favicon，可修改 `PROBE_PATH`。
-- `preview-*.png` 為預覽截圖，部署時可不上傳。
+- 测速是在访客浏览器中请求各网域的 `/favicon.ico`，结果仅供参考；若某网域没有 favicon，可修改 `PROBE_PATH`。
+- `preview-*.png` 为预览截图，部署时可不上传；`bg-mobile.jpg`、`bg-desktop.jpg` 为背景图，需与 `index.html` 放在同一目录。
